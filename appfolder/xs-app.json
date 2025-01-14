@@ -1,9 +1,12 @@
 {
-    "authenticationMethod": "none",
+  "welcomeFile": "AppRouterHome.html",
+    "authenticationMethod": "route",
     "routes": [
       {
-        "source": "^/(.*)$",
-        "destination": "Env_dest_sap_homepage"
+      "authenticationType": "xsuaa",
+      "source": "^/backendservice/(.*)$",
+      "target": "$1",
+      "destination": "env_destination_bs"
       }
     ]
   }
