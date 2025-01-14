@@ -1,0 +1,15 @@
+---
+applications:
+  - name: myApprouterConfigurationApp
+    host: myapprouterconfapp
+    path: appfolder
+    memory: 128M
+    random-route: true
+    env:
+      destinations: >
+        [
+          {
+            "name": "Env_dest_sap_homepage",
+            "url": "http://sap.com/"
+          }
+        ]

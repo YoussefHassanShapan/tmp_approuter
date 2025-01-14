@@ -1,0 +1,10 @@
+{
+    "authenticationMethod": "none",
+    "routes": [
+      {
+        "source": "^/(.*)$",
+        "destination": "Env_dest_sap_homepage"
+      }
+    ]
+  }
+  
