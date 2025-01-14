@@ -4,12 +4,15 @@ applications:
     host: myapprouterconfapp
     path: appfolder
     memory: 128M
+    services:  
+      - XsuaaForAppRouterWithBs
     random-route: true
     env:
       destinations: >
         [
           {
-            "name": "Env_dest_sap_homepage",
-            "url": "http://sap.com/"
+            "name": "env_destination_bs",
+            "url": "https://backend-service-api.cfapps.eu10.hana.ondemand.com/odatav2/DEFAULT/PRODUCTSERVICE;v=1/Products/",
+            "forwardAuthToken": true
           }
         ]
