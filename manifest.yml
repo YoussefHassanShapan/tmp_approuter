@@ -5,14 +5,14 @@ applications:
     path: appfolder
     memory: 128M
     services:  
-      - XsuaaForAppRouterWithBs
+      - XsuaaForApprouterConf
     random-route: true
     env:
       destinations: >
         [
           {
             "name": "env_destination_bs",
-            "url": "https://backend-service-api.cfapps.eu10.hana.ondemand.com/odatav2/DEFAULT/PRODUCTSERVICE;v=1/Products/",
+            "url": "https://btpsd.cfapps.us10-001.hana.ondemand.com/linetypes",
             "forwardAuthToken": true
           }
         ]

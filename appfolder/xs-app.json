@@ -4,7 +4,7 @@
     "routes": [
       {
       "authenticationType": "xsuaa",
-      "source": "^/backendservice/(.*)$",
+      "source": "^/(.*)$",
       "target": "$1",
       "destination": "env_destination_bs"
       }
